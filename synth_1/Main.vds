@@ -1,0 +1,818 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Oct 18 07:42:55 2026
+# Process ID         : 17348
+# Current directory  : D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1
+# Command line       : vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+# Log file           : D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1/Main.vds
+# Journal file       : D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1\vivado.jou
+# Running On         : whr
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 16873 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 26000 MB
+# Available Virtual  : 8121 MB
+#-----------------------------------------------------------
+source Main.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/utils_1/imports/synth_1/Main.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/utils_1/imports/synth_1/Main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+WARNING: [Common 17-576] 'no_retiming' is deprecated. Please use -global_retiming option
+Command: synth_design -top Main -part xc7a35tcsg324-1 -no_retiming -no_srlextract
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3416
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 998.492 ; gain = 466.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Main.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'FrequencyDivision' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/FrequencyDivision.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'FrequencyDivision' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/FrequencyDivision.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'UartInputDataProcessing' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/UartInputDataProcessing.sv:107]
+INFO: [Synth 8-6155] done synthesizing module 'UartInputDataProcessing' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/UartInputDataProcessing.sv:107]
+INFO: [Synth 8-6157] synthesizing module 'Adc_xilinx' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Adc_xilinx.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'delay_beats' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/delay_beats.sv:22]
+	Parameter DELAY_NUM bound to: 150 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_beats' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/delay_beats.sv:22]
+WARNING: [Synth 8-689] width (1) of port connection 'din' does not match port width (8) of module 'delay_beats' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Adc_xilinx.sv:41]
+WARNING: [Synth 8-689] width (1) of port connection 'dout' does not match port width (8) of module 'delay_beats' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Adc_xilinx.sv:42]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1/.Xil/Vivado-17348-whr/realtime/xadc_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1/.Xil/Vivado-17348-whr/realtime/xadc_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'delay_beats__parameterized0' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/delay_beats.sv:22]
+	Parameter DELAY_NUM bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_beats__parameterized0' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/delay_beats.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'Adc_xilinx' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Adc_xilinx.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'TCD1304' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304.sv:135]
+	Parameter CCD_ELEMENT_COUNTS bound to: 16'b0000111001101110 
+INFO: [Synth 8-6155] done synthesizing module 'TCD1304' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304.sv:135]
+INFO: [Synth 8-6157] synthesizing module 'TCD1304_data_processor' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304_data_processor.sv:207]
+	Parameter CCD_ELEMENT_COUNTS bound to: 16'b0000111001101110 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_sum' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1/.Xil/Vivado-17348-whr/realtime/blk_mem_gen_sum_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_sum' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1/.Xil/Vivado-17348-whr/realtime/blk_mem_gen_sum_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'blk_mem_gen_sum' is unconnected for instance 'blk_mem_sum' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304_data_processor.sv:302]
+WARNING: [Synth 8-7023] instance 'blk_mem_sum' of module 'blk_mem_gen_sum' has 8 connections declared, but only 7 given [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304_data_processor.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_cnt' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1/.Xil/Vivado-17348-whr/realtime/blk_mem_gen_cnt_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_cnt' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1/.Xil/Vivado-17348-whr/realtime/blk_mem_gen_cnt_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'blk_mem_gen_cnt' is unconnected for instance 'blk_mem_cnt' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304_data_processor.sv:312]
+WARNING: [Synth 8-7023] instance 'blk_mem_cnt' of module 'blk_mem_gen_cnt' has 8 connections declared, but only 7 given [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304_data_processor.sv:312]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_avg' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1/.Xil/Vivado-17348-whr/realtime/blk_mem_gen_avg_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_avg' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1/.Xil/Vivado-17348-whr/realtime/blk_mem_gen_avg_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'blk_mem_gen_avg' is unconnected for instance 'blk_mem_avg' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304_data_processor.sv:322]
+WARNING: [Synth 8-7023] instance 'blk_mem_avg' of module 'blk_mem_gen_avg' has 8 connections declared, but only 7 given [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304_data_processor.sv:322]
+INFO: [Synth 8-6157] synthesizing module 'delay_beats__parameterized1' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/delay_beats.sv:22]
+	Parameter DELAY_NUM bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+WARNING: [Synth 8-324] index 1 out of range [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/delay_beats.sv:36]
+INFO: [Synth 8-6155] done synthesizing module 'delay_beats__parameterized1' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/delay_beats.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'delay_beats__parameterized2' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/delay_beats.sv:22]
+	Parameter DELAY_NUM bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_beats__parameterized2' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/delay_beats.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'TCD1304_data_processor' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304_data_processor.sv:207]
+INFO: [Synth 8-6157] synthesizing module 'tcd1304_valid456_dual' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/tcd1304_valid456.sv:37]
+	Parameter DATA_W bound to: 16 - type: integer 
+	Parameter ELEM_TOTAL bound to: 16'b0000111001101110 
+	Parameter VALID_START bound to: 12'b000000100000 
+	Parameter VALID_LEN bound to: 12'b111001000000 
+	Parameter DECIM bound to: 8 - type: integer 
+	Parameter CH_NUM bound to: 9'b111001000 
+	Parameter LOG_CH bound to: 9 - type: integer 
+	Parameter AVG_SEL bound to: 0 - type: integer 
+	Parameter RAM_LAT bound to: 0 - type: integer 
+	Parameter BUF_STRIDE bound to: 512 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tcd1304_valid456_dual' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/tcd1304_valid456.sv:37]
+WARNING: [Synth 8-689] width (12) of port connection 'i_uart_ch_idx' does not match port width (9) of module 'tcd1304_valid456_dual' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Main.sv:159]
+INFO: [Synth 8-6157] synthesizing module 'Uart_data_ready' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Uart_data_ready.sv:22]
+	Parameter NUM_OF_CHANNEL bound to: 9'b111001000 
+INFO: [Synth 8-6155] done synthesizing module 'Uart_data_ready' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Uart_data_ready.sv:22]
+WARNING: [Synth 8-689] width (12) of port connection 'o_ordinal' does not match port width (16) of module 'Uart_data_ready' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Main.sv:202]
+INFO: [Synth 8-6157] synthesizing module 'Uart_8bits' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Uart_8bits.sv:23]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter STOP_BITS bound to: 1 - type: integer 
+	Parameter PARITY_EN bound to: 1 - type: integer 
+	Parameter PARITY_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Uart_8bits' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Uart_8bits.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Neural_network' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Neural_network.sv:22]
+	Parameter IN_FEATURES bound to: 9'b111001000 
+	Parameter OUT_FEATURES bound to: 2 - type: integer 
+	Parameter BIT_WIDTH bound to: 8 - type: integer 
+	Parameter PARREL bound to: 1 - type: integer 
+	Parameter RAW_DATA_W bound to: 24 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'nn_preprocess' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:22]
+	Parameter WIDTH bound to: 24 - type: integer 
+	Parameter FEATURE_CNT bound to: 9'b111001000 
+	Parameter ROM_ADDR_W bound to: 8 - type: integer 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-226] default block is never used [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:246]
+INFO: [Synth 8-6155] done synthesizing module 'nn_preprocess' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'NN_module' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/NN_module.sv:3]
+	Parameter BIT_WIDTH bound to: 8 - type: integer 
+	Parameter PARALL bound to: 1 - type: integer 
+	Parameter IN_FEATURES bound to: 9'b111001000 
+	Parameter OUT_FEATURES bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Bram_Serial2Serial' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Bram_Serial2Serial.sv:23]
+	Parameter DATA_W bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 9'b111001000 
+INFO: [Synth 8-6155] done synthesizing module 'Bram_Serial2Serial' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Bram_Serial2Serial.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Full_connect_layer' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Full_connect_layer.sv:22]
+	Parameter LAYER_INDEX bound to: 1 - type: integer 
+	Parameter BIT_WIDTH bound to: 8 - type: integer 
+	Parameter IN_FEATURES bound to: 9'b111001000 
+	Parameter OUT_FEATURES bound to: 50 - type: integer 
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][0]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][1]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][2]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][3]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][4]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][5]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][6]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][7]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][8]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][9]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][10]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][11]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][12]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][13]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][14]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][15]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][16]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][17]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][18]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][19]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][20]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][21]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][22]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][23]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][24]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][25]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][26]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][27]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][28]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][29]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][30]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][31]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][32]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][33]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][34]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][35]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][36]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][37]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][38]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][39]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][40]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][41]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][42]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][43]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][44]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][45]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][46]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][47]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][48]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][49]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][50]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][51]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][52]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][53]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][54]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][55]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][56]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][57]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][58]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][59]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][60]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][61]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][62]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][63]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][64]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][65]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][66]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][67]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][68]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][69]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][70]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][71]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][72]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][73]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][74]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][75]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][76]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][77]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][78]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][79]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][80]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][81]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][82]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][83]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][84]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][85]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][86]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][87]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][88]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][89]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][90]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][91]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][92]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][93]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][94]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][95]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][96]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][97]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][98]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'weight_1[0][99]' is not inferred as ram due to incorrect usage [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/weights.vh:5]
+INFO: [Common 17-14] Message 'Synth 8-7186' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Common 17-14] Message 'Synth 8-5974' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'Full_connect_layer' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Full_connect_layer.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'Hard_modified_sigmoid' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Hard_modified_sigmoid.sv:21]
+	Parameter W_IN bound to: 26 - type: integer 
+	Parameter W_OUT bound to: 8 - type: integer 
+	Parameter N bound to: 50 - type: integer 
+	Parameter THRESH bound to: 32'sb00000000000000000000000000000100 
+	Parameter SHIFT_W bound to: 7 - type: integer 
+	Parameter SCALE bound to: 16256.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'Hard_modified_sigmoid' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Hard_modified_sigmoid.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'Bram_Parallel2Serial' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Bram_Parallel2Serial.sv:23]
+	Parameter DATA_W bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 50 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Bram_Parallel2Serial' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Bram_Parallel2Serial.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Full_connect_layer__parameterized0' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Full_connect_layer.sv:22]
+	Parameter LAYER_INDEX bound to: 2 - type: integer 
+	Parameter BIT_WIDTH bound to: 8 - type: integer 
+	Parameter IN_FEATURES bound to: 50 - type: integer 
+	Parameter OUT_FEATURES bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Full_connect_layer__parameterized0' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Full_connect_layer.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'Hard_modified_sigmoid__parameterized0' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Hard_modified_sigmoid.sv:21]
+	Parameter W_IN bound to: 23 - type: integer 
+	Parameter W_OUT bound to: 8 - type: integer 
+	Parameter N bound to: 30 - type: integer 
+	Parameter THRESH bound to: 32'sb00000000000000000000000000000100 
+	Parameter SHIFT_W bound to: 8 - type: integer 
+	Parameter SCALE bound to: 32512.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'Hard_modified_sigmoid__parameterized0' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Hard_modified_sigmoid.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'Bram_Parallel2Serial__parameterized0' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Bram_Parallel2Serial.sv:23]
+	Parameter DATA_W bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Bram_Parallel2Serial__parameterized0' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Bram_Parallel2Serial.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Full_connect_layer__parameterized1' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Full_connect_layer.sv:22]
+	Parameter LAYER_INDEX bound to: 3 - type: integer 
+	Parameter BIT_WIDTH bound to: 8 - type: integer 
+	Parameter IN_FEATURES bound to: 30 - type: integer 
+	Parameter OUT_FEATURES bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Full_connect_layer__parameterized1' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Full_connect_layer.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'Argmax' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Argmax.sv:88]
+	Parameter N bound to: 2 - type: integer 
+	Parameter WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Argmax' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Argmax.sv:88]
+INFO: [Synth 8-6155] done synthesizing module 'NN_module' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/NN_module.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'SegLed' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/SegLed.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'SegLed' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/SegLed.sv:4]
+WARNING: [Synth 8-689] width (4) of port connection 'din' does not match port width (8) of module 'SegLed' [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Neural_network.sv:109]
+INFO: [Synth 8-6155] done synthesizing module 'Neural_network' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Neural_network.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (0#1) [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/Main.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element cnt_timer_os_reg was removed.  [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304.sv:184]
+WARNING: [Synth 8-6014] Unused sequential element cnt_os_trigger_reg was removed.  [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/TCD1304.sv:188]
+WARNING: [Synth 8-6014] Unused sequential element acc8_reg was removed.  [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/tcd1304_valid456.sv:124]
+WARNING: [Synth 8-7137] Register chan_mem_reg in module tcd1304_valid456_dual has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'chan_mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "chan_mem_reg" dissolved into registers
+WARNING: [Synth 8-6014] Unused sequential element scale_reg was removed.  [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:103]
+WARNING: [Synth 8-6014] Unused sequential element ram_wr_en_reg was removed.  [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:105]
+WARNING: [Synth 8-6014] Unused sequential element norm_tmp_reg was removed.  [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:107]
+WARNING: [Synth 8-3936] Found unconnected internal register 'M_reg' and it is trimmed from '24' to '23' bits. [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:238]
+WARNING: [Synth 8-7137] Register frame_calc_en_delay1_reg in module nn_preprocess has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:116]
+WARNING: [Synth 8-7137] Register frame_calc_en_delay2_reg in module nn_preprocess has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:117]
+WARNING: [Synth 8-7137] Register rd_pulse_delay1_reg in module nn_preprocess has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:124]
+WARNING: [Synth 8-7137] Register rd_pulse_delay2_reg in module nn_preprocess has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/nn_preprocess.sv:125]
+WARNING: [Synth 8-7137] Register buf_ram_reg in module nn_preprocess has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'buf_ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "buf_ram_reg" dissolved into registers
+WARNING: [Synth 8-3848] Net overflow1 in module/entity NN_module does not have driver. [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/NN_module.sv:28]
+WARNING: [Synth 8-3848] Net overflow2 in module/entity NN_module does not have driver. [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sources_1/new/NN_module.sv:28]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1361.082 ; gain = 829.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1361.082 ; gain = 829.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1361.082 ; gain = 829.582
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.361 . Memory (MB): peak = 1363.793 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'Adc_xilinx_inst/Xadc_inst'
+Finished Parsing XDC File [d:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'Adc_xilinx_inst/Xadc_inst'
+Parsing XDC File [d:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.gen/sources_1/ip/blk_mem_gen_sum/blk_mem_gen_sum/blk_mem_gen_sum_in_context.xdc] for cell 'TCD1304_data_processor_inst/blk_mem_sum'
+Finished Parsing XDC File [d:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.gen/sources_1/ip/blk_mem_gen_sum/blk_mem_gen_sum/blk_mem_gen_sum_in_context.xdc] for cell 'TCD1304_data_processor_inst/blk_mem_sum'
+Parsing XDC File [d:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.gen/sources_1/ip/blk_mem_gen_cnt/blk_mem_gen_cnt/blk_mem_gen_cnt_in_context.xdc] for cell 'TCD1304_data_processor_inst/blk_mem_cnt'
+Finished Parsing XDC File [d:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.gen/sources_1/ip/blk_mem_gen_cnt/blk_mem_gen_cnt/blk_mem_gen_cnt_in_context.xdc] for cell 'TCD1304_data_processor_inst/blk_mem_cnt'
+Parsing XDC File [d:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.gen/sources_1/ip/blk_mem_gen_avg/blk_mem_gen_avg/blk_mem_gen_avg_in_context.xdc] for cell 'TCD1304_data_processor_inst/blk_mem_avg'
+Finished Parsing XDC File [d:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.gen/sources_1/ip/blk_mem_gen_avg/blk_mem_gen_avg/blk_mem_gen_avg_in_context.xdc] for cell 'TCD1304_data_processor_inst/blk_mem_avg'
+Parsing XDC File [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/constrs_1/new/Main.xdc]
+Finished Parsing XDC File [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/constrs_1/new/Main.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/constrs_1/new/Main.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1503.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 1503.191 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1503.191 ; gain = 971.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1503.191 ; gain = 971.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for Adc_xilinx_inst/Xadc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TCD1304_data_processor_inst/blk_mem_sum. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TCD1304_data_processor_inst/blk_mem_cnt. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TCD1304_data_processor_inst/blk_mem_avg. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1503.191 ; gain = 971.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1503.191 ; gain = 971.691
+---------------------------------------------------------------------------------
+Main__GC0Neural_network__GC0NN_module__1__GB2NN_module__1__GB1NN_module__1__GB0tcd1304_valid456_dual__GB3tcd1304_valid456_dual__GB2tcd1304_valid456_dual__GB1tcd1304_valid456_dual__GB0---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1503.191 ; gain = 971.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1503.191 ; gain = 971.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1503.191 ; gain = 971.691
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++-+----------------+------------+----------+----------+
+| |Changed Modules |Replication |Instances |Changed % |
++-+----------------+------------+----------+----------+
++-+----------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 158322
+   Resynthesis Design Size (number of cells) : 0
+   Resynth % : 0.0000,  Reuse % : 100.0000
+
+3. Reference Checkpoint Information
+
++----------------------------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/utils_1/imports/synth_1/Main.dcp |
++----------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2024.2 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+-----------------------------------+------------+----------+
+|      |RTL Partition                      |Replication |Instances |
++------+-----------------------------------+------------+----------+
+|1     |tcd1304_valid456_dual__GB0_#REUSE# |           1|         0|
+|2     |tcd1304_valid456_dual__GB1_#REUSE# |           1|         0|
+|3     |tcd1304_valid456_dual__GB2_#REUSE# |           1|         0|
+|4     |tcd1304_valid456_dual__GB3_#REUSE# |           1|         0|
+|5     |NN_module__1__GB0_#REUSE#          |           1|         0|
+|6     |NN_module__1__GB1_#REUSE#          |           1|         0|
+|7     |NN_module__1__GB2_#REUSE#          |           1|         0|
+|8     |Neural_network__GC0_#REUSE#        |           1|         0|
+|9     |Main__GC0_#REUSE#                  |           1|         0|
++------+-----------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1503.191 ; gain = 971.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1503.191 ; gain = 971.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1568.148 ; gain = 1036.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1569.254 ; gain = 1037.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1578.516 ; gain = 1047.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1578.516 ; gain = 1047.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance Neural_network_inst/nn_module_inst/bram2/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Neural_network_inst/nn_module_inst/bram3/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Neural_network_inst/nn_module_inst/bram1/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin di_in[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin dwe_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Adc_xilinx_inst/Xadc_inst  has unconnected pin vn_in
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1754.621 ; gain = 1223.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1754.621 ; gain = 1223.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1755.660 ; gain = 1224.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1755.660 ; gain = 1224.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1771.348 ; gain = 1239.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1771.348 ; gain = 1239.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_connect_layer | A*B         | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|nn_preprocess      | (C+A*B)'    | 24     | 16     | 40     | -      | 41     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |xadc_wiz_0      |         1|
+|2     |blk_mem_gen_sum |         1|
+|3     |blk_mem_gen_cnt |         1|
+|4     |blk_mem_gen_avg |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |blk_mem_gen_avg |     1|
+|2     |blk_mem_gen_cnt |     1|
+|3     |blk_mem_gen_sum |     1|
+|4     |xadc_wiz        |     1|
+|5     |BUFG            |     3|
+|6     |CARRY4          |  1198|
+|7     |DSP48E1         |    83|
+|8     |LUT1            |   144|
+|9     |LUT2            |  4733|
+|10    |LUT3            |  2485|
+|11    |LUT4            |  2263|
+|12    |LUT5            |  1177|
+|13    |LUT6            | 15259|
+|14    |MUXF7           |  6172|
+|15    |MUXF8           |  2528|
+|16    |RAMB18E1        |     3|
+|17    |FDCE            |  5422|
+|18    |FDPE            |    80|
+|19    |FDRE            | 23684|
+|20    |LD              |    44|
+|21    |IBUF            |     5|
+|22    |OBUF            |    14|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1771.348 ; gain = 1239.848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 19 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1771.348 ; gain = 1097.738
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1771.348 ; gain = 1239.848
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.398 . Memory (MB): peak = 1780.539 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10028 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1793.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  LD => LDCE: 44 instances
+
+Synth Design complete | Checksum: 7521ed60
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 234 Warnings, 19 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1793.379 ; gain = 1454.703
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1793.379 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/synth_1/Main.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 18 07:44:12 2026...
