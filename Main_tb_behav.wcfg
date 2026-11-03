@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Main_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Main_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="20.990965001 ms"></ZoomEndTime>
+      <Cursor1Time time="16.507369700 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="275"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="105" />
+   <wvobject fp_name="/Main_tb/ip_clk" type="logic">
+      <obj_property name="ElementShortName">ip_clk</obj_property>
+      <obj_property name="ObjectShortName">ip_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/ip_rst_" type="logic">
+      <obj_property name="ElementShortName">ip_rst_</obj_property>
+      <obj_property name="ObjectShortName">ip_rst_</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/clk_2MHz" type="logic">
+      <obj_property name="ElementShortName">clk_2MHz</obj_property>
+      <obj_property name="ObjectShortName">clk_2MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/op_phim" type="logic">
+      <obj_property name="ElementShortName">op_phim</obj_property>
+      <obj_property name="ObjectShortName">op_phim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/op_icg" type="logic">
+      <obj_property name="ElementShortName">op_icg</obj_property>
+      <obj_property name="ObjectShortName">op_icg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/op_sh" type="logic">
+      <obj_property name="ElementShortName">op_sh</obj_property>
+      <obj_property name="ObjectShortName">op_sh</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_inst/cnt_timer_sh" type="array">
+      <obj_property name="ElementShortName">cnt_timer_sh[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_timer_sh[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_inst/sh_n" type="logic">
+      <obj_property name="ElementShortName">sh_n</obj_property>
+      <obj_property name="ObjectShortName">sh_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_inst/sh" type="logic">
+      <obj_property name="ElementShortName">sh</obj_property>
+      <obj_property name="ObjectShortName">sh</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/sh_int_time" type="array">
+      <obj_property name="ElementShortName">sh_int_time[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sh_int_time[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_inst/i_sh_int_time" type="array">
+      <obj_property name="ElementShortName">i_sh_int_time[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_sh_int_time[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/num_avg" type="array">
+      <obj_property name="ElementShortName">num_avg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">num_avg[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/data_from_ad" type="array">
+      <obj_property name="ElementShortName">data_from_ad[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_from_ad[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/i_data_from_ad" type="array">
+      <obj_property name="ElementShortName">i_data_from_ad[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data_from_ad[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/data_from_ad" type="array">
+      <obj_property name="ElementShortName">data_from_ad[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_from_ad[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/eoc_broadened" type="logic">
+      <obj_property name="ElementShortName">eoc_broadened</obj_property>
+      <obj_property name="ObjectShortName">eoc_broadened</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/eoc_broadened_n" type="logic">
+      <obj_property name="ElementShortName">eoc_broadened_n</obj_property>
+      <obj_property name="ObjectShortName">eoc_broadened_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/cnt_n" type="array">
+      <obj_property name="ElementShortName">cnt_n[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_n[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/full_scan_cnt" type="array">
+      <obj_property name="ElementShortName">full_scan_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">full_scan_cnt[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/full_scan_cnt_n" type="array">
+      <obj_property name="ElementShortName">full_scan_cnt_n[7:0]</obj_property>
+      <obj_property name="ObjectShortName">full_scan_cnt_n[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/sum_we_delay1" type="logic">
+      <obj_property name="ElementShortName">sum_we_delay1</obj_property>
+      <obj_property name="ObjectShortName">sum_we_delay1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/sum_we_delay2" type="logic">
+      <obj_property name="ElementShortName">sum_we_delay2</obj_property>
+      <obj_property name="ObjectShortName">sum_we_delay2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/ram_addr" type="array">
+      <obj_property name="ElementShortName">ram_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/sum_we" type="logic">
+      <obj_property name="ElementShortName">sum_we</obj_property>
+      <obj_property name="ObjectShortName">sum_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/sum_en" type="logic">
+      <obj_property name="ElementShortName">sum_en</obj_property>
+      <obj_property name="ObjectShortName">sum_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/sum_din" type="array">
+      <obj_property name="ElementShortName">sum_din[19:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_din[19:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/sum_dout" type="array">
+      <obj_property name="ElementShortName">sum_dout[19:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_dout[19:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/cnt_din" type="array">
+      <obj_property name="ElementShortName">cnt_din[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_din[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/cnt_dout" type="array">
+      <obj_property name="ElementShortName">cnt_dout[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_dout[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/sum_we_delay2" type="logic">
+      <obj_property name="ElementShortName">sum_we_delay2</obj_property>
+      <obj_property name="ObjectShortName">sum_we_delay2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/full_scan_cnt" type="array">
+      <obj_property name="ElementShortName">full_scan_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">full_scan_cnt[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/i_index" type="array">
+      <obj_property name="ElementShortName">i_index[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_index[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/avg_ram_addr" type="array">
+      <obj_property name="ElementShortName">avg_ram_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">avg_ram_addr[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/avg_din" type="array">
+      <obj_property name="ElementShortName">avg_din[11:0]</obj_property>
+      <obj_property name="ObjectShortName">avg_din[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/avg_dout" type="array">
+      <obj_property name="ElementShortName">avg_dout[11:0]</obj_property>
+      <obj_property name="ObjectShortName">avg_dout[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/o_data_avg" type="array">
+      <obj_property name="ElementShortName">o_data_avg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data_avg[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/TCD1304_data_processor_inst/o_data_valid" type="logic">
+      <obj_property name="ElementShortName">o_data_valid</obj_property>
+      <obj_property name="ObjectShortName">o_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/i_data_ready" type="logic">
+      <obj_property name="ElementShortName">i_data_ready</obj_property>
+      <obj_property name="ObjectShortName">i_data_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/frame_start" type="logic">
+      <obj_property name="ElementShortName">frame_start</obj_property>
+      <obj_property name="ObjectShortName">frame_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/rdy_s0" type="logic">
+      <obj_property name="ElementShortName">rdy_s0</obj_property>
+      <obj_property name="ObjectShortName">rdy_s0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/rdy_s1" type="logic">
+      <obj_property name="ElementShortName">rdy_s1</obj_property>
+      <obj_property name="ObjectShortName">rdy_s1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/rdy_s2" type="logic">
+      <obj_property name="ElementShortName">rdy_s2</obj_property>
+      <obj_property name="ObjectShortName">rdy_s2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/a_pipe" type="array">
+      <obj_property name="ElementShortName">a_pipe[0:0][11:0]</obj_property>
+      <obj_property name="ObjectShortName">a_pipe[0:0][11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/v_pipe" type="array">
+      <obj_property name="ElementShortName">v_pipe[0:0]</obj_property>
+      <obj_property name="ObjectShortName">v_pipe[0:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/cap_vld" type="logic">
+      <obj_property name="ElementShortName">cap_vld</obj_property>
+      <obj_property name="ObjectShortName">cap_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/cap_addr" type="array">
+      <obj_property name="ElementShortName">cap_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cap_addr[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/i_ram_data" type="array">
+      <obj_property name="ElementShortName">i_ram_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_ram_data[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/idx_nn_10ns" type="logic">
+      <obj_property name="ElementShortName">idx_nn_10ns</obj_property>
+      <obj_property name="ObjectShortName">idx_nn_10ns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/rd_addr" type="array">
+      <obj_property name="ElementShortName">rd_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_addr[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/cap_in_win" type="logic">
+      <obj_property name="ElementShortName">cap_in_win</obj_property>
+      <obj_property name="ObjectShortName">cap_in_win</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/rd_run" type="logic">
+      <obj_property name="ElementShortName">rd_run</obj_property>
+      <obj_property name="ObjectShortName">rd_run</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/ch_wr" type="array">
+      <obj_property name="ElementShortName">ch_wr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ch_wr[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/sr0" type="array">
+      <obj_property name="ElementShortName">sr0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sr0[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/sr1" type="array">
+      <obj_property name="ElementShortName">sr1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sr1[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/sr2" type="array">
+      <obj_property name="ElementShortName">sr2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sr2[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/sr3" type="array">
+      <obj_property name="ElementShortName">sr3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sr3[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/sum4" type="array">
+      <obj_property name="ElementShortName">sum4[17:0]</obj_property>
+      <obj_property name="ObjectShortName">sum4[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/mavg4" type="array">
+      <obj_property name="ElementShortName">mavg4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mavg4[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/acc8" type="array">
+      <obj_property name="ElementShortName">acc8[18:0]</obj_property>
+      <obj_property name="ObjectShortName">acc8[18:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/sum8" type="array">
+      <obj_property name="ElementShortName">sum8[18:0]</obj_property>
+      <obj_property name="ObjectShortName">sum8[18:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/mavg8" type="array">
+      <obj_property name="ElementShortName">mavg8[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mavg8[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/grp_cnt" type="array">
+      <obj_property name="ElementShortName">grp_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">grp_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/chan_mem" type="array">
+      <obj_property name="ElementShortName">chan_mem[0:1023][15:0]</obj_property>
+      <obj_property name="ObjectShortName">chan_mem[0:1023][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/o_ram_addr" type="array">
+      <obj_property name="ElementShortName">o_ram_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_ram_addr[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/fast_rd" type="array">
+      <obj_property name="ElementShortName">fast_rd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fast_rd[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/o_ch_data" type="array">
+      <obj_property name="ElementShortName">o_ch_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_ch_data[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/o_ch_idx" type="array">
+      <obj_property name="ElementShortName">o_ch_idx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">o_ch_idx[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/idx_nn_10ns" type="logic">
+      <obj_property name="ElementShortName">idx_nn_10ns</obj_property>
+      <obj_property name="ObjectShortName">idx_nn_10ns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/raw_sig" type="array">
+      <obj_property name="ElementShortName">raw_sig[23:0]</obj_property>
+      <obj_property name="ObjectShortName">raw_sig[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/raw_valid" type="logic">
+      <obj_property name="ElementShortName">raw_valid</obj_property>
+      <obj_property name="ObjectShortName">raw_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/data_valid" type="logic">
+      <obj_property name="ElementShortName">data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/rd_cnt" type="array">
+      <obj_property name="ElementShortName">rd_cnt[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_cnt[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/rd_cnt_n" type="array">
+      <obj_property name="ElementShortName">rd_cnt_n[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_cnt_n[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/x_buf" type="array">
+      <obj_property name="ElementShortName">x_buf[23:0]</obj_property>
+      <obj_property name="ObjectShortName">x_buf[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/min_save" type="array">
+      <obj_property name="ElementShortName">min_save[23:0]</obj_property>
+      <obj_property name="ObjectShortName">min_save[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/buf_ram" type="array">
+      <obj_property name="ElementShortName">buf_ram[0:32][23:0]</obj_property>
+      <obj_property name="ObjectShortName">buf_ram[0:32][23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/x_sub_n" type="array">
+      <obj_property name="ElementShortName">x_sub_n[24:0]</obj_property>
+      <obj_property name="ObjectShortName">x_sub_n[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/x_sub" type="array">
+      <obj_property name="ElementShortName">x_sub[24:0]</obj_property>
+      <obj_property name="ObjectShortName">x_sub[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/mul_full" type="array">
+      <obj_property name="ElementShortName">mul_full[40:0]</obj_property>
+      <obj_property name="ObjectShortName">mul_full[40:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/mul_shifted" type="array">
+      <obj_property name="ElementShortName">mul_shifted[39:0]</obj_property>
+      <obj_property name="ObjectShortName">mul_shifted[39:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/norm_8bit" type="array">
+      <obj_property name="ElementShortName">norm_8bit[7:0]</obj_property>
+      <obj_property name="ObjectShortName">norm_8bit[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/u_nn_preprocess/valid_out" type="logic">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/preproc_valid" type="logic">
+      <obj_property name="ElementShortName">preproc_valid</obj_property>
+      <obj_property name="ObjectShortName">preproc_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/nn_done" type="logic">
+      <obj_property name="ElementShortName">nn_done</obj_property>
+      <obj_property name="ObjectShortName">nn_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/preproc_out_0_255" type="array">
+      <obj_property name="ElementShortName">preproc_out_0_255[7:0]</obj_property>
+      <obj_property name="ObjectShortName">preproc_out_0_255[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/o_ch_valid" type="logic">
+      <obj_property name="ElementShortName">o_ch_valid</obj_property>
+      <obj_property name="ObjectShortName">o_ch_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/ch_rd" type="array">
+      <obj_property name="ElementShortName">ch_rd[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ch_rd[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/wr_bank" type="logic">
+      <obj_property name="ElementShortName">wr_bank</obj_property>
+      <obj_property name="ObjectShortName">wr_bank</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/o_frame_done" type="logic">
+      <obj_property name="ElementShortName">o_frame_done</obj_property>
+      <obj_property name="ObjectShortName">o_frame_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/uart_rd" type="array">
+      <obj_property name="ElementShortName">uart_rd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">uart_rd[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/i_uart_ch_idx" type="array">
+      <obj_property name="ElementShortName">i_uart_ch_idx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">i_uart_ch_idx[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/o_uart_ch_data" type="array">
+      <obj_property name="ElementShortName">o_uart_ch_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_uart_ch_data[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/o_uart_data_ready" type="logic">
+      <obj_property name="ElementShortName">o_uart_data_ready</obj_property>
+      <obj_property name="ObjectShortName">o_uart_data_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/serve_bank" type="logic">
+      <obj_property name="ElementShortName">serve_bank</obj_property>
+      <obj_property name="ObjectShortName">serve_bank</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/newest_bank" type="logic">
+      <obj_property name="ElementShortName">newest_bank</obj_property>
+      <obj_property name="ObjectShortName">newest_bank</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/new_bank_rdy" type="logic">
+      <obj_property name="ElementShortName">new_bank_rdy</obj_property>
+      <obj_property name="ObjectShortName">new_bank_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/frame_full" type="logic">
+      <obj_property name="ElementShortName">frame_full</obj_property>
+      <obj_property name="ObjectShortName">frame_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/frame_loaded" type="logic">
+      <obj_property name="ElementShortName">frame_loaded</obj_property>
+      <obj_property name="ObjectShortName">frame_loaded</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/tcd1304_valid456_dual_inst/idx_d" type="array">
+      <obj_property name="ElementShortName">idx_d[8:0]</obj_property>
+      <obj_property name="ObjectShortName">idx_d[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/ip_uart_rx" type="logic">
+      <obj_property name="ElementShortName">ip_uart_rx</obj_property>
+      <obj_property name="ObjectShortName">ip_uart_rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/op_uart_tx" type="logic">
+      <obj_property name="ElementShortName">op_uart_tx</obj_property>
+      <obj_property name="ObjectShortName">op_uart_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/op_seg_en" type="array">
+      <obj_property name="ElementShortName">op_seg_en[1:0]</obj_property>
+      <obj_property name="ObjectShortName">op_seg_en[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_tb/Main_inst/Neural_network_inst/op_seg_data" type="array">
+      <obj_property name="ElementShortName">op_seg_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op_seg_data[7:0]</obj_property>
+   </wvobject>
+</wave_config>
