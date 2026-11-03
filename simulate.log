@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Main_tb.Main_inst.TCD1304_data_processor_inst.blk_mem_sum.inst.native_mem_module.blk_mem_gen_v8_4_9_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Main_tb.Main_inst.TCD1304_data_processor_inst.blk_mem_cnt.inst.native_mem_module.blk_mem_gen_v8_4_9_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Main_tb.Main_inst.TCD1304_data_processor_inst.blk_mem_avg.inst.native_mem_module.blk_mem_gen_v8_4_9_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+sim finish
+$finish called at time : 22429620 ns : File "D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.srcs/sim_1/new/Main_tb.v" Line 105
+INFO: xsimkernel Simulation Memory Usage: 48708 KB (Peak: 48708 KB), Simulation CPU Usage: 139968 ms

@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_1.srcs/sources_1/new" \
+"../../../../project_1.gen/sources_1/ip/blk_mem_gen_avg/sim/blk_mem_gen_avg.v" \
+"../../../../project_1.gen/sources_1/ip/blk_mem_gen_cnt/sim/blk_mem_gen_cnt.v" \
+"../../../../project_1.gen/sources_1/ip/blk_mem_gen_sum/sim/blk_mem_gen_sum.v" \
+"../../../../project_1.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.v" \
+
+sv xil_defaultlib  --include "../../../../project_1.srcs/sources_1/new" \
+"../../../../project_1.srcs/sources_1/new/Adc_xilinx.sv" \
+"../../../../project_1.srcs/sources_1/new/Argmax.sv" \
+"../../../../project_1.srcs/sources_1/new/Bram_Parallel2Serial.sv" \
+"../../../../project_1.srcs/sources_1/new/Bram_Serial2Serial.sv" \
+"../../../../project_1.srcs/sources_1/new/FrequencyDivision.sv" \
+"../../../../project_1.srcs/sources_1/new/Full_connect_layer.sv" \
+"../../../../project_1.srcs/sources_1/new/Hard_modified_sigmoid.sv" \
+"../../../../project_1.srcs/sources_1/new/Main.sv" \
+"../../../../project_1.srcs/sources_1/new/NN_module.sv" \
+"../../../../project_1.srcs/sources_1/new/Neural_network.sv" \
+"../../../../project_1.srcs/sources_1/new/SegLed.sv" \
+"../../../../project_1.srcs/sources_1/new/TCD1304.sv" \
+"../../../../project_1.srcs/sources_1/new/TCD1304_data_processor.sv" \
+"../../../../project_1.srcs/sources_1/new/UartInputDataProcessing.sv" \
+"../../../../project_1.srcs/sources_1/new/Uart_8bits.sv" \
+"../../../../project_1.srcs/sources_1/new/Uart_data_ready.sv" \
+"../../../../project_1.srcs/sources_1/new/delay_beats.sv" \
+"../../../../project_1.srcs/sources_1/new/nn_preprocess.sv" \
+"../../../../project_1.srcs/sources_1/new/tcd1304_valid456.sv" \
+
+verilog xil_defaultlib  --include "../../../../project_1.srcs/sources_1/new" \
+"../../../../project_1.srcs/sim_1/new/Main_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
