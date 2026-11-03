@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Sep 25 10:16:06 2026
+# Process ID         : 8836
+# Current directory  : D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/blk_mem_gen_sum_synth_1
+# Command line       : vivado.exe -log blk_mem_gen_sum.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_sum.tcl
+# Log file           : D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/blk_mem_gen_sum_synth_1/blk_mem_gen_sum.vds
+# Journal file       : D:/Program/FPGA/Xilinx/Xilinx_Vivado2024/TCD1304 driver with nn/project_1.runs/blk_mem_gen_sum_synth_1\vivado.jou
+# Running On         : whr
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 16873 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25463 MB
+# Available Virtual  : 9266 MB
+#-----------------------------------------------------------
+source blk_mem_gen_sum.tcl -notrace
